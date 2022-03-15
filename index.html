@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+<link rel="stylesheet" href="style.css">
+<div id="toast"></div>
+
+<div id="container">
+    <h1>Điền thông tin cá nhân </h1>
+    <div id="from">
+      <form>
+        <table >
+            <tr>
+                <td><h2>nhập họ và tên</h2>  </td><td></td>
+                <td><input id="name" type="text" placeholder="name ... "></td>
+            </tr>
+            <tr>
+              <td><h2>nhập số điện thoại </h2></td><td ></td>
+              <td><input id="phone" type="number" placeholder="phone ... "></td>
+          </tr>
+            <tr>
+              <td>
+               <h2>chọn loại mạng </h2>  
+              </td>
+              <td></td>
+              <td>
+                 <select id="network" >
+                    <option disabled selected value="0" >--  Option --</option>
+                    <option value="1" >Viettel</option>
+                    <option value="2">VinaPhone</option>
+                    <option  value="3">MobiPhone</option>
+                    <option  value="4">Nước ngoài</option>
+                  </select>
+              </td>
+            </tr>
+        </table>
+      </form>
+
+      <button type="button"  id="access">Xác nhận</button>
+     
+      
+      </div>
+        <div id="container2">
+          <h1>thông tin vừa nhập </h1>
+        <div id="from2">
+              <table >
+                <tr>
+                  <td><h2>name :</h2> </td><td></td><td><h2 id="exportName"></h2></td>
+                </tr>
+                <tr>
+                  <td><h2>phone : </h2></td><td></td><td><h2 id="exportPhone"></h2></td>
+                </tr>
+                <tr>
+                  <td><h2>network : </h2></td><td></td><td><h2 id="exportNetwork"></h2></td>
+                </tr>
+              </table>
+            </div>
+          </div>      
+    </div>
+  
+   
+<!-- <div>
+  <div onclick="showSuccessToast();" class="btn btn--success">Show success toast</div>
+  <div onclick="showErrorToast();" class="btn btn--danger">Show error toast</div>
+</div> -->
+<script src="main.js"></script>
